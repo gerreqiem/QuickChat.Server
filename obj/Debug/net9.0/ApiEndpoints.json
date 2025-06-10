@@ -1,0 +1,181 @@
+[
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.AuthEndpoints\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapAuthEndpoints\u003Eb__1",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QuickChat.Server.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAuthEndpoints\u003Eb__0_0",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QuickChat.Server.Models.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.ChatEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapChatEndpoints\u003Eb__0_0",
+    "RelativePath": "api/chats",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.ChatEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapChatEndpoints\u003Eb__0_1",
+    "RelativePath": "api/chats",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QuickChat.Server.Models.CreateChatRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.MessageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageEndpoints\u003Eb__0_1",
+    "RelativePath": "api/messages",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QuickChat.Server.Models.SendMessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.MessageEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMessageEndpoints\u003Eb__0_0",
+    "RelativePath": "api/messages/{chatId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.UserEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapUserEndpoints\u003Eb__0_0",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "QuickChat.Server.Endpoints.UserEndpoints\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003CMapUserEndpoints\u003Eb__1",
+    "RelativePath": "api/users/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "QuickChat.Server.Models.UpdateUsernameRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
